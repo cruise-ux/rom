@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Through Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="love-timeline.css">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <svg class="music-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+        <span class="music-text">Play Music</span>
+    </div>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2c4d748c89.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">The Moment Time Changed</h1>
+            <p class="hero-subtitle fade-in delay-1">
+                In all the infinite moments that could have existed,<br>
+                in all the countless paths we could have taken,<br>
+                <span class="highlight">time chose us.</span>
+            </p>
+            <p class="hero-text fade-in delay-2">
+                This is our story — a love written across the calendar of forever.
+            </p>
+            <div class="scroll-indicator fade-in delay-3">
+                <span>Begin Our Journey</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-header">
+            <h2 class="section-title">Our Story Through Time</h2>
+            <p class="section-subtitle">Every moment with you became a memory I never want to forget</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item" data-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Beginning</span>
+                    <h3 class="timeline-title">The First Hello</h3>
+                    <p class="timeline-text">
+                        I didn't know then that a simple conversation would become the prologue 
+                        to the greatest story of my life. Your voice, your laugh, the way you saw 
+                        the world — it all felt like coming home to a place I'd never been.
+                    </p>
+                    <div class="hidden-note">
+                        <em>You changed everything without even trying.</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item" data-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Connection</span>
+                    <h3 class="timeline-title">The First Laugh</h3>
+                    <p class="timeline-text">
+                        The first time I made you laugh — really laugh — I knew I wanted to spend 
+                        my life creating that sound. Your joy became my favorite melody, 
+                        your smile became the light I chase.
+                    </p>
+                    <div class="hidden-note">
+                        <em>Your happiness is my life's work.</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item" data-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Realization</span>
+                    <h3 class="timeline-title">The First Time I Knew</h3>
+                    <p class="timeline-text">
+                        There was a moment — quiet, unremarkable to anyone else — where I looked 
+                        at you and just knew. This wasn't just love. This was fate recognizing itself. 
+                        This was my soul saying, <em>"There you are. I've been looking for you."</em>
+                    </p>
+                    <div class="hidden-note">
+                        <em>I knew it was you. It's always been you.</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item" data-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Test</span>
+                    <h3 class="timeline-title">The Hard Days We Survived</h3>
+                    <p class="timeline-text">
+                        Not every chapter was easy. There were storms, doubts, and moments when 
+                        the world felt heavy. But we held on. We chose each other even when it was hard. 
+                        And that's when I learned: real love isn't just joy — it's commitment through the dark.
+                    </p>
+                    <div class="hidden-note">
+                        <em>We didn't just survive. We grew stronger.</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 5 -->
+            <div class="timeline-item" data-reveal>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Truth</span>
+                    <h3 class="timeline-title">The Love That Stayed</h3>
+                    <p class="timeline-text">
+                        Through every season, every change, every version of ourselves — 
+                        the love stayed. It evolved, deepened, matured. It became something 
+                        unshakeable. A constant in a world of variables.
+                    </p>
+                    <div class="hidden-note">
+                        <em>You are my constant.</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letters Section -->
+    <section class="love-letters" id="letters">
+        <div class="section-header">
+            <h2 class="section-title">Letters to You</h2>
+            <p class="section-subtitle">Words I needed you to hear</p>
+        </div>
+
+        <div class="letters-grid">
+            <div class="letter-card" data-reveal>
+                <div class="letter-header">
+                    <span class="letter-date">Written from the heart</span>
+                </div>
+                <div class="letter-content">
+                    <p class="letter-handwriting">My love,</p>
+                    <p>
+                        I don't think you realize how much light you bring into the world. 
+                        How your kindness makes people feel seen. How your strength inspires 
+                        me to be better. You are not just loved — you are cherished, admired, 
+                        and needed more than words could ever express.
+                    </p>
+                    <p class="letter-signature">— Forever yours</p>
+                </div>
+            </div>
+
+            <div class="letter-card" data-reveal>
+                <div class="letter-header">
+                    <span class="letter-date">A truth I carry</span>
+                </div>
+                <div class="letter-content">
+                    <p class="letter-handwriting">To the love of my life,</p>
+                    <p>
+                        Every day, I wake up and choose you. Not out of obligation, but out of 
+                        profound gratitude that I get to. You are my peace in chaos, my clarity 
+                        in confusion, and my home no matter where I am.
+                    </p>
+                    <p class="letter-signature">— Always</p>
+                </div>
+            </div>
+
+            <div class="letter-card" data-reveal>
+                <div class="letter-header">
+                    <span class="letter-date">A promise kept</span>
+                </div>
+                <div class="letter-content">
+                    <p class="letter-handwriting">My dearest,</p>
+                    <p>
+                        I promise to love you on the easy days and the hard ones. When you're 
+                        confident and when you doubt yourself. When the world celebrates you 
+                        and when it doesn't. My love isn't conditional — it's eternal.
+                    </p>
+                    <p class="letter-signature">— With all of me</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It's You Section -->
+    <section class="reasons-section" id="reasons">
+        <div class="section-header">
+            <h2 class="section-title">Why It's Always You</h2>
+            <p class="section-subtitle">A thousand reasons, and they're all true</p>
+        </div>
+
+        <div class="reasons-container">
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">01</span>
+                <p class="reason-text">The way you see beauty in the smallest things reminds me to slow down and notice life</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">02</span>
+                <p class="reason-text">Your laugh is the only sound I never get tired of hearing</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">03</span>
+                <p class="reason-text">You love with your whole heart, even when it's been broken</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">04</span>
+                <p class="reason-text">The way you make everyone around you feel valued and seen</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">05</span>
+                <p class="reason-text">Your strength — not loud or performative, but quiet, resilient, and real</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">06</span>
+                <p class="reason-text">You believe in me even when I don't believe in myself</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">07</span>
+                <p class="reason-text">The peace I feel when I'm with you — like I'm finally where I belong</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">08</span>
+                <p class="reason-text">You're brilliant, passionate, and endlessly curious about the world</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">09</span>
+                <p class="reason-text">Your heart — generous, empathetic, and full of grace</p>
+            </div>
+            <div class="reason-item" data-reveal>
+                <span class="reason-number">10</span>
+                <p class="reason-text">Because loving you feels like the most natural thing I've ever done</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Present Moment Section -->
+    <section class="present-section" id="present">
+        <div class="present-content">
+            <h2 class="section-title">The Present Moment</h2>
+            <p class="present-text">
+                Here we are — in this exact moment in time. Not perfect, but real. 
+                Still learning, still growing, still choosing each other. This is where 
+                love lives — not in some distant past or imagined future, but right here, 
+                right now, in the everyday choice to stay, to care, to try.
+            </p>
+            <p class="present-highlight">
+                I choose you today. I'll choose you tomorrow. I'll choose you every day after.
+            </p>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="future-section" id="future">
+        <div class="future-content">
+            <h2 class="section-title">Still Writing Time</h2>
+            <p class="future-text">
+                Our story isn't finished. There are chapters yet unwritten, moments yet to be lived, 
+                memories yet to be made. And I want all of them — the ordinary mornings, the quiet nights, 
+                the adventures, the stillness, the challenges, the victories.
+            </p>
+            <p class="future-text">
+                I want to grow old with you. To build a life that's ours. To prove that love isn't 
+                just a feeling — it's a choice we make, over and over, until our last breath.
+            </p>
+            <div class="future-horizon"></div>
+        </div>
+    </section>
+
+    <!-- Forever Section -->
+    <section class="forever-section" id="forever">
+        <div class="forever-content">
+            <h2 class="forever-title">Forever Starts Here</h2>
+            <p class="forever-text">
+                In all the universe, across all of time,<br>
+                <span class="forever-highlight">you are my once-in-a-lifetime.</span>
+            </p>
+            <div class="forever-date">
+                <p>And I'll love you beyond the edges of eternity.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="love-timeline.js"></script>
+</body>
+</html>
